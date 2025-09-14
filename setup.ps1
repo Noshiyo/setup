@@ -16,7 +16,7 @@ winget install -e --accept-package-agreements --id Git.Git
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User") 
 oh-my-posh font install meslo
 New-Item -Path $PROFILE -Type File -Force
-Add-Content -Path $PROFILE -Value "oh-my-posh init pwsh --config ($env:USERPROFILE)\Documents\Themes\hul10.omp.json | Invoke-Expression | clear"
+Add-Content -Path $PROFILE -Value "oh-my-posh init pwsh --config $env:USERPROFILE\Documents\Themes\hul10.omp.json | Invoke-Expression | clear"
 git clone https://github.com/JanDeDobbeleer/oh-my-posh.git
 New-Item -ItemType Directory -Force -Path "$($env:USERPROFILE)\Documents\Themes"
 Copy-Item "oh-my-posh\themes\hul10.omp.json" -Destination "$($env:USERPROFILE)\Documents\Themes\hul10.omp.json"
