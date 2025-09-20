@@ -8,6 +8,7 @@ winget install -e --accept-package-agreements --id JetBrains.Rider
 winget install -e --accept-package-agreements JanDeDobbeleer.OhMyPosh --source winget --scope user --force
 winget install -e --accept-package-agreements --id Mozilla.Firefox
 winget install -e --accept-package-agreements --id Microsoft.DotNet.SDK.6
+winget install -e --accept-package-agreements --id Microsoft.DotNet.SDK.8
 winget install -e --accept-package-agreements --id JetBrains.ReSharper
 winget install -e --accept-package-agreements --id JetBrains.Toolbox
 winget install -e --accept-package-agreements --id WinMerge.WinMerge
