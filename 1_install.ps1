@@ -20,5 +20,5 @@ Add-Content -Path $PROFILE -Value "oh-my-posh init pwsh --config $env:USERPROFIL
 git clone https://github.com/JanDeDobbeleer/oh-my-posh.git
 New-Item -ItemType Directory -Force -Path "$($env:USERPROFILE)\Documents\Themes"
 Copy-Item "oh-my-posh\themes\hul10.omp.json" -Destination "$($env:USERPROFILE)\Documents\Themes\hul10.omp.json"
-
+Remove-Item "oh-my-posh" -Recurse -Force
 $PROFILE
