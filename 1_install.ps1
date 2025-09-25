@@ -1,5 +1,5 @@
 winget upgrade --accept-package-agreements --all
-winget install -e --accept-package-agreements --id Microsoft.VisualStudio.2022.Enterprise --override "--wait --quiet --add Microsoft.VisualStudio.Workload.Data Microsoft.VisualStudio.Workload.NetWeb Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended"
+winget install -e --accept-package-agreements --id Microsoft.VisualStudio.2022.Professional --override "--wait --quiet --add Microsoft.VisualStudio.Workload.Data Microsoft.VisualStudio.Workload.NetWeb Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended"
 winget install -e --accept-package-agreements --id Notepad++.Notepad++
 winget install -e --accept-package-agreements --id Postman.Postman
 winget install -e --accept-package-agreements --id Microsoft.VisualStudioCode
